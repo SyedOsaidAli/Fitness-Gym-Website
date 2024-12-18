@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fitness Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Top Buttons (Login and Register) -->
+    <div class="top-buttons">
+        <a href="{{ url_for('login') }}" class="button">Login</a>
+        <a href="{{ url_for('registration') }}" class="button">Register</a>
+    </div>
+
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Fitness Gym in Action</h2>
+        <div class="gallery-container">
+<img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Gym Workout" class="gallery-image">
+<img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Personal Training" class="gallery-image">
+<img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Group Class" class="gallery-image">
+<img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Strength Training" class="gallery-image">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Website made by Syed Osaid Ali, all rights reserved.</p>
+    </footer>
+
+</body>
+</html>

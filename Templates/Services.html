@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Fitness Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Top Buttons (Login and Register) -->
+    <div class="top-buttons">
+        <a href="{{ url_for('login') }}" class="button">Login</a>
+        <a href="{{ url_for('registration') }}" class="button">Register</a>
+    </div>
+
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Fitness Programs</h2>
+        <p>We offer a range of services to help you reach your fitness goals. Choose the plan that suits you!</p>
+
+        <div class="plans">
+            <div class="plan">
+                <h3>Personal Training</h3>
+                <p>Get a personalized workout with one-on-one sessions. Our expert trainers will guide you to reach your fitness goals faster.</p>
+                <p><strong>Price: $50 per session</strong></p>
+            </div>
+
+            <div class="plan">
+                <h3>Yoga Classes</h3>
+                <p>Relax and improve flexibility with our yoga sessions. Ideal for all levels, our instructors focus on mindfulness and body alignment.</p>
+                <p><strong>Price: $20 per class</strong></p>
+            </div>
+
+            <div class="plan">
+                <h3>Weight Loss Program</h3>
+                <p>Achieve your weight loss goals with a combination of exercise routines and nutritional guidance tailored just for you.</p>
+                <p><strong>Price: $200 for 4 weeks</strong></p>
+            </div>
+
+            <div class="plan">
+                <h3>Group Fitness Classes</h3>
+                <p>Join our group fitness classes for a fun and motivating environment. From HIIT to Zumba, there's something for everyone!</p>
+                <p><strong>Price: $15 per class</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Website made by Syed Osaid Ali, all rights reserved.</p>
+    </footer>
+
+</body>
+</html>

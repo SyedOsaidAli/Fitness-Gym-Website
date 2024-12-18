@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Fitness Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Top Buttons (Login and Register) -->
+    <div class="top-buttons">
+        <a href="{{ url_for('login') }}" class="button">Login</a>
+        <a href="{{ url_for('registration') }}" class="button">Register</a>
+    </div>
+
+    <header>
+        <h1>Welcome to Fitness Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Your journey to a healthier life begins here!</h2>
+        <p>At Fitness Gym, we believe in empowering individuals to reach their full potential. Whether you're looking to lose weight, build muscle, or just maintain a healthy lifestyle, we have the resources and expertise to help you achieve your goals. With state-of-the-art equipment, personalized training programs, and a supportive community, we are dedicated to providing you with the tools you need for success.</p>
+        <h3>Join Us Today!</h3>
+        <p>Ready to take the first step toward a healthier, stronger you? Join our Fitness Gym community today and start working towards your fitness goals. <a href="{{ url_for('registration') }}">Register now</a> or <a href="{{ url_for('login') }}">Log in</a> if you're already a member!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Website made by Syed Osaid Ali, all rights reserved.</p>
+    </footer>
+
+</body>
+</html>
